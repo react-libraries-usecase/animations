@@ -1,0 +1,30 @@
+
+#root {
+  color: #fff;
+  font-size: 32px;
+  font-family: PT Sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+button {
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  background: #000;
+  font-size: 22px;
+  color: white;
+  padding: 15px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}

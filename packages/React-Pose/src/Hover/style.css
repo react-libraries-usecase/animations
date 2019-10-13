@@ -1,0 +1,8 @@
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 15px 10px 15px rgba(0,0,0,0.4);
+  background: #d4ffe4;
+}

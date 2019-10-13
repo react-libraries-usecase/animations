@@ -28,20 +28,10 @@
     "@storybook/addon-info": "^5.2.3",
     "@storybook/react": "^5.2.3",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
-    "jest": "^24.9.0",
-    "jest-haste-map": "^24.9.0",
-    "jest-resolve": "^24.9.0",
-    "jest-styled-components": "^6.3.3",
-    "lerna": "^3.16.5",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "styled-components": "^4.4.0",
-    "webpack": "^4.41.0",
-    "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-config-adpyke-es6": "^1.4.12",
     "eslint-plugin-import": "^2.18.2",
@@ -50,6 +40,19 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
-    "prettier": "^1.18.2"
+    "jest": "^24.9.0",
+    "jest-haste-map": "^24.9.0",
+    "jest-resolve": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
+    "lerna": "^3.16.5",
+    "prettier": "^1.18.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
+    "styled-components": "^4.4.0",
+    "webpack": "^4.41.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.1.2"
   }
 }

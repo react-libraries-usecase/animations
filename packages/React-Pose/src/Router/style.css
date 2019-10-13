@@ -1,0 +1,35 @@
+
+header {
+  margin-bottom: 40px;
+}
+
+#site-container {
+  background: white;
+  padding: 20px;
+  min-height: calc(100vh - 20px);
+}
+
+#content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style: none;
+}
+
+ul#site-nav {
+  flex: 0 0 120px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+}

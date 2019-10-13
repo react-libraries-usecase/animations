@@ -38,9 +38,9 @@ const Basic = () => {
 export default Basic;
 ~~~
 `;
-storiesOf('Css', module)
+storiesOf('CssTransition', module)
   .add('Basic', () => {
-    const Basic = lazy(() => import('./../src/Basic'));
+    const Basic = lazy(() => import('./../src/Basic/index'));
     return (
       <Suspense fallback={<div>Loading...</div>}>
         <Basic />

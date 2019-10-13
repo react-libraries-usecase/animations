@@ -1,0 +1,18 @@
+
+
+.title {
+  cursor: pointer;
+  background-image: linear-gradient(-180deg, #ff1c68 0%, #9f0092 300px);
+  padding: 5px 8px;
+  border-bottom: 1px solid #9f0092;
+}
+
+.content {
+  overflow: hidden;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.content-wrapper {
+  padding: 5px 8px 20px 8px;
+}
