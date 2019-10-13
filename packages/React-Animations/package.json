@@ -1,0 +1,16 @@
+{
+  "name": "react-controlled",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "styled-components": "4.1.3"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0",
+    "styled-components": "^4.0.0"
+  }
+}
