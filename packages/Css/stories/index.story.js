@@ -1,12 +1,51 @@
 import React, { lazy, Suspense } from 'react';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('React-Controlled', module)
+const text = `
+~~~js
+import React, { useState } from 'react';
+import './style.css';
+
+const Basic = () => {
+  const [infinite, setInfinite] = useState(false);
+  const [playing, setPlaying] = useState(false);
+
+  const handleInfiniteChange = e => {
+    setInfinite(e.target.checked);
+  };
+  const handlePlayingChange = () => {
+    setPlaying(!playing);
+  };
+
+  return (
+    <>
+      <div
+        className={
+          'wrapper ' + (infinite && ' infinitePlay ') + (playing && 'playing')
+        }
+      >
+        <div className="object" />
+      </div>
+      <label>
+        Infinite:
+        <input type="checkbox" onChange={handleInfiniteChange} />
+      </label>
+      <input type="button" value="Play" onChange={handlePlayingChange} />
+    </>
+  );
+};
+
+export default Basic;
+~~~
+`;
+storiesOf('Css', module)
   .add('Basic', () => {
-    const BasicForm = lazy(() => import('./../src/Basic'));
+    const Basic = lazy(() => import('./../src/Basic'));
     return (
       <Suspense fallback={<div>Loading...</div>}>
-        <BasicForm />
+        <Basic />
       </Suspense>
     );
-  });;
+  },{
+    info: text
+  });

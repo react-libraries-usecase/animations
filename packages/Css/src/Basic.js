@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
+import './style.css';
 
-const BasicForm = () => {
-  const [value, setValue] = useState('');
+const Basic = () => {
+  const [status, setStatus] = useState('Hide');
 
-  const handleChange = event => {
-    setValue(event.target.value);
-  };
-  const handleSubmit = event => {
-    alert('A name was submitted: ' + value);
-    event.preventDefault();
+  const handleShowHide = e => {
+    setStatus(e.target.value);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type='text' value={value} onChange={handleChange} />
-      </label>
-      <input type='submit' value='Submit' />
-    </form>
+    <>
+      <div className={`wrapper ${status}`}>
+        <div className="object" />
+      </div>
+      <input type="button" value="show" onClick={handleShowHide} />
+      <input type="button" value="hide" onClick={handleShowHide} />
+    </>
   );
 };
 
-export default BasicForm;
+export default Basic;

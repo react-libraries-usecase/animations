@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('React-Controlled', module)
+storiesOf('React-Animations', module)
   .add('Basic', () => {
     const BasicForm = lazy(() => import('./../src/Basic'));
     return (
