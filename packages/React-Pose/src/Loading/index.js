@@ -13,7 +13,7 @@ const Item = posed.li({
     transition: {
       scale: {
         type: 'spring',
-        velocity: 10
+        velocity: 5
       },
       default: {
         type: 'spring'
@@ -30,15 +30,18 @@ class Example extends React.Component {
       this.setState({
         items: shuffle(this.state.items)
       });
-    }, 1000);
+    }, 2000);
   }
 
   render() {
     const { items } = this.state;
 
     return (
-      <ul>
-        <PoseGroup>{items.map(id => <Item key={id} />)}</PoseGroup>
+      <ul style={{width: 400}}>
+        <PoseGroup>{items.map(id => <Item style={{
+          background: '#ccc',
+          borderRadius: 10
+        }} key={id} />)}</PoseGroup>
       </ul>
     );
   }
