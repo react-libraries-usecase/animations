@@ -1,5 +1,5 @@
 
-#root {
+#MorphingHolder {
   color: #fff;
   font-size: 32px;
   font-family: PT Sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +12,7 @@
   display: flex;
 }
 
-button {
+#MorphingHolder button {
   border: none;
   margin: 0;
   width: auto;

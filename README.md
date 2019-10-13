@@ -9,4 +9,4 @@
 
 In this repo we will add popular ways to create animations, and gonna provide an example to every single usage.
 
-Demo at : https://animations-c7rjvhz8s.now.sh
+Demo at : https://animations.sayjeyhi.now.sh/

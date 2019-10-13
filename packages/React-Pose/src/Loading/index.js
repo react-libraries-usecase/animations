@@ -37,12 +37,14 @@ class Example extends React.Component {
     const { items } = this.state;
 
     return (
-      <ul style={{width: 400}}>
-        <PoseGroup>{items.map(id => <Item style={{
-          background: '#ccc',
-          borderRadius: 10
-        }} key={id} />)}</PoseGroup>
-      </ul>
+      <div id="LoadingHolder">
+        <ul style={{width: 400}}>
+          <PoseGroup>{items.map(id => <Item style={{
+            background: '#ccc',
+            borderRadius: 10
+          }} key={id} />)}</PoseGroup>
+        </ul>
+      </div>
     );
   }
 }

@@ -1,4 +1,4 @@
-#root {
+#LoadingHolder {
   color: #fff;
   font-size: 32px;
   font-family: PT Sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +10,7 @@
   display: flex;
 }
 
-ul {
+#LoadingHolder ul {
   list-style: none;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@ ul {
   max-width: 500px;
 }
 
-li {
+#LoadingHolder li {
   display: block;
   border-radius: 2px;
   background: white;

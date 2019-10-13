@@ -58,12 +58,12 @@ const Morphing = () => {
   };
 
   return (
-    <>
+    <div id="MorphingHolder">
       <svg width="400" height="400" viewBox="0 0 520 500">
         <Icon pose={pathIds[pathIndex]} />
       </svg>
       <NextButton onClick={gotoNext}>Next icon!</NextButton>
-    </>
+    </div>
   );
 };
 

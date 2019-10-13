@@ -2,6 +2,10 @@ import React, { lazy, Suspense } from 'react';
 import { storiesOf } from '@storybook/react';
 
 const text = `
+# Title
+
+<Giphy gif='cheese' />
+
 ~~~js
 import React, { useState } from 'react';
 import './style.css';
@@ -47,5 +51,5 @@ storiesOf('CssTransition', module)
       </Suspense>
     );
   },{
-    info: text
+    notes: text ,
   });
