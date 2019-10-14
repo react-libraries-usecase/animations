@@ -5,7 +5,9 @@
   "module": "src/index.js",
   "dependencies": {
     "react": "16.10.2",
-    "react-dom": "16.10.2"
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "16.10.2",
+    "react-transition-group": "^4.3.0"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
