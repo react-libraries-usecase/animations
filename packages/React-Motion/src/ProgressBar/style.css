@@ -1,0 +1,25 @@
+#parent {
+  padding-top: 5em;
+  padding-bottom: 40px;
+  background-color: rgb(225, 223, 223);
+  height: 100vh;
+}
+
+#progress-holder{
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4em;
+  text-align: center;
+}
+
+#progress-text{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#progress-bar-wrapper{
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 40px;
+  color:white;
+}
