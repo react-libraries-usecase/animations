@@ -4,8 +4,13 @@
   "main": "lib/index.js",
   "module": "src/index.js",
   "dependencies": {
+    "body-scroll-lock": "^2.6.4",
+    "lodash-es": "^4.17.15",
+    "lodash-move": "^1.1.1",
     "react": "16.10.2",
-    "react-dom": "16.10.2"
+    "react-dom": "16.10.2",
+    "react-spring": "^9.0.0-canary.809.5.f01ecc2",
+    "react-use-gesture": "^6.0.9"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
