@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Tween, Timeline } from 'react-gsap';
 
-const BasicForm = () => {
-  const [value, setValue] = useState('');
 
-  const handleChange = event => {
-    setValue(event.target.value);
-  };
-  const handleSubmit = event => {
-    alert('A name was submitted: ' + value);
-    event.preventDefault();
-  };
+const Basic = () => (
+  <>
+    <Tween from={{ x: '100px', rotation: -360 }}>
+      <div>This element gets tweened</div>
+    </Tween>
+    <Timeline
+      target={
+        <div>Target element which will be visible and gets tweened</div>
+      }
+    >
+      <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} />
+      <Tween to={{ x: '50px' }} />
+    </Timeline>
+    </>
+);
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type='text' value={value} onChange={handleChange} />
-      </label>
-      <input type='submit' value='Submit' />
-    </form>
-  );
-};
-
-export default BasicForm;
+export default Basic;
