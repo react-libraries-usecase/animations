@@ -1,43 +1,33 @@
-const Markdown = `
-# Title
+let Js_SourceCode = '';
 
- <Giphy gif='cheese' />
 
- ~~~js
- import React, { useState } from 'react';
- import './style.css';
+console.log(require.resolve("./../src/Basic") );
 
- const Basic = () => {
-   const [infinite, setInfinite] = useState(false);
-   const [playing, setPlaying] = useState(false);
 
-   const handleInfiniteChange = e => {
-     setInfinite(e.target.checked);
-   };
-   const handlePlayingChange = () => {
-     setPlaying(!playing);
-   };
+/**
+ * Load local files
+ * @type {Promise<Response>}
+ */
+const Js = fetch('./../src/Basic').then(code => (Js_SourceCode = code));
 
-   return (
-     <>
-       <div
-         className={
-           'wrapper ' + (infinite && ' infinitePlay ') + (playing && 'playing')
-         }
-       >
-         <div className="object" />
-       </div>
-       <label>
-         Infinite:
-         <input type="checkbox" onChange={handleInfiniteChange} />
-       </label>
-       <input type="button" value="Play" onChange={handlePlayingChange} />
-     </>
-   );
- };
+/**
+ * to make it easy wait until load source codes
+ * @type {Promise<Response[]>}
+ */
+const PromiseAll = Promise.all([Js]).then((values) => {
+  console.log(values);
+  /**
+   * We will write every explanation of our codes right here
+   */
+  return `
+# Source code
 
- export default Basic;
- ~~~
+
+~~~js
+${values[0]}
+~~~
 `;
 
-export default Markdown;
+});
+
+export default PromiseAll;

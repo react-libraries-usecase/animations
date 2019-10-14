@@ -1,25 +1,10 @@
-import React, { useState } from 'react';
+import React  from 'react';
+import {Motion, spring} from 'react-motion';
 
-const BasicForm = () => {
-  const [value, setValue] = useState('');
-
-  const handleChange = event => {
-    setValue(event.target.value);
-  };
-  const handleSubmit = event => {
-    alert('A name was submitted: ' + value);
-    event.preventDefault();
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type='text' value={value} onChange={handleChange} />
-      </label>
-      <input type='submit' value='Submit' />
-    </form>
-  );
+const Basic = () => {
+  return <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
+    {value => <div>{value.x}</div>}
+  </Motion>;
 };
 
-export default BasicForm;
+export default Basic;

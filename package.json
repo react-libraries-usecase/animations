@@ -25,9 +25,7 @@
     "@babel/core": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
-    "@storybook/addon-info": "^5.2.3",
     "@storybook/addon-notes": "^5.2.3",
-    "@storybook/addon-storysource": "^5.2.3",
     "@storybook/addon-viewport": "^5.2.3",
     "@storybook/react": "^5.2.3",
     "babel-core": "7.0.0-bridge.0",
@@ -52,7 +50,6 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-test-renderer": "^16.10.2",
-    "styled-components": "^4.4.0",
     "webpack": "^4.41.0"
   },
   "dependencies": {
